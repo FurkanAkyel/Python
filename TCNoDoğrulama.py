@@ -1,4 +1,4 @@
-#TC Kimlik No Doğrulama
+# TC Kimlik No Doğrulama
 
 TCNo = input("TC NO Giriniz = ")
 

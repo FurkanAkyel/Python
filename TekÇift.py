@@ -1,4 +1,4 @@
-#Tek Mi Çift Mi
+# Tek Mi Çift Mi
 
 x = int(input("Sayıyı Giriniz = "))
 

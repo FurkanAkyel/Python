@@ -1,4 +1,4 @@
-#Yazılan Sayıya Kadar Kare Alma
+# Yazılan Sayıya Kadar Kare Alma
 
 n = int(input("Sayıyı Giriniz = "))
 

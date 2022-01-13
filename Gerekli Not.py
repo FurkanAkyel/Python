@@ -1,4 +1,4 @@
-#Sınavdan Geçmek İçin Alınması Gereken Not
+# Sınavdan Geçmek İçin Alınması Gereken Not
 
 gecmeNotu = float(input("Geçme Notu = "))
 ilkSinav = float(input("Vize Notunuz = "))

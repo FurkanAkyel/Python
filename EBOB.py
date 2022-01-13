@@ -1,3 +1,5 @@
+# EBOB
+
 a = float(input("İlk Sayıyı Giriniz = "))
 b = float(input("İkinci Sayıyı Giriniz = "))
 

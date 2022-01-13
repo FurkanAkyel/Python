@@ -11,17 +11,7 @@ m2 = [[-1 , -2, -3, -4],
 [9, 9, -57, 9],
 [9, 2, 9, 9]]
 
-n = m1+m2
-
-def dikeyEksenTopla1(m):
-    a = 0
-    for j in range(len(m[0])):
-        for i in range(len(m)):
-            a += m[i][j]
-        print(a)
-        a=0
-
-def dikeyEksenTopla2(a, b):
+def dikeyEksenTopla1(a, b):
     k = a + b
     sutunSayisi = len(k[0])
     sonuc = [0] * sutunSayisi
@@ -29,6 +19,16 @@ def dikeyEksenTopla2(a, b):
         for r in range(len(k)):
             sonuc[c] += k[r][c]
     return sonuc
+   
+n = m1+m2
 
-dikeyEksenTopla1(n)
-print(dikeyEksenTopla2(m1, m2))
+def dikeyEksenTopla2(m):
+    a = 0
+    for j in range(len(m[0])):
+        for i in range(len(m)):
+            a += m[i][j]
+        print(a)
+        a=0
+
+dikeyEksenTopla1(m1, m2))
+print(dikeyEksenTopla2(n)

@@ -1,3 +1,5 @@
+# Öğrenci Bilgileri
+
 ogrenciler = {}
 
 numara = input("Öğrenci Numarası = ")

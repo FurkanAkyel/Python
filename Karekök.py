@@ -1,4 +1,4 @@
-#Karekök
+# Karekök
 
 x = int(input("Sayıyı Giriniz = "))
 

@@ -1,4 +1,4 @@
-#Üçgen Eşitsizliği
+# Üçgen Eşitsizliği
 
 import math
 

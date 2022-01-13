@@ -1,4 +1,4 @@
-#Liste
+# Liste
 
 ad, soyad, yas, okul, fakulte, bolum = 'Furkan', 'Akyel', '18', 'İnönü Üniversitesi', 'Mühendislik Fakültesi', 'Bilgisayar Mühendisliği'
 
