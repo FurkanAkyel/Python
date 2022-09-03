@@ -7,7 +7,7 @@ def Kayit():
     global kayitEkran
     kayitEkran = Toplevel(anaEkran)
     kayitEkran.title("Kayıt Ol")
-    kayitEkran.geometry("300x250")
+    kayitEkran.geometry("600x480")
 
     global kullaniciAd
     global sifre
@@ -22,18 +22,18 @@ def Kayit():
     kullaniciAdLabel.pack()
     kullaniciAdEntry = Entry(kayitEkran, textvariable=kullaniciAd)
     kullaniciAdEntry.pack()
-    sifreLabel = Label(kayitEkran, text="Password * ")
+    sifreLabel = Label(kayitEkran, text="Şifre * ")
     sifreLabel.pack()
     sifreEntry = Entry(kayitEkran, textvariable=sifre, show="*")
     sifreEntry.pack()
     Label(kayitEkran, text="").pack()
-    Button(kayitEkran, text="Kayıt Ol", width=10, height=1, bg="cyan", command = KullaniciKayit).pack()
+    Button(kayitEkran, text="Kayıt Ol", width=20, height=2, bg="cyan", command = KullaniciKayit).pack()
 
 def Giris():
     global girisEkran
     girisEkran = Toplevel(anaEkran)
     girisEkran.title("Giriş Yap")
-    girisEkran.geometry("300x250")
+    girisEkran.geometry("600x480")
     Label(girisEkran, text="Lütfen Detayları Giriniz").pack()
     Label(girisEkran, text="").pack()
 
@@ -54,7 +54,7 @@ def Giris():
     sifreGirisEntry = Entry(girisEkran, textvariable=sifreDogrulama, show="*")
     sifreGirisEntry.pack()
     Label(girisEkran, text="").pack()
-    Button(girisEkran, text="Giriş Yap", width=10, height=1, bg="cyan", command=GirisDogrulama).pack()
+    Button(girisEkran, text="Giriş Yap", width=20, height=2, bg="cyan", command=GirisDogrulama).pack()
    
 def KullaniciKayit():
 
@@ -102,7 +102,7 @@ def SifreEslesmiyor():
     global sifreEslesmiyorEkran
     sifreEslesmiyorEkran = Toplevel(girisEkran)
     sifreEslesmiyorEkran.title("Başarılı")
-    sifreEslesmiyorEkran.geometry("150x100")
+    sifreEslesmiyorEkran.geometry("300x200")
     Label(sifreEslesmiyorEkran, text="Şifre Yanlış").pack()
     Button(sifreEslesmiyorEkran, text="Tamam", command=SilSifreEslesmiyor).pack()
 
@@ -110,7 +110,7 @@ def KullaniciBulunamadi():
     global kullaniciBulunamadiEkran
     kullaniciBulunamadiEkran = Toplevel(girisEkran)
     kullaniciBulunamadiEkran.title("Başarılı")
-    kullaniciBulunamadiEkran.geometry("150x100")
+    kullaniciBulunamadiEkran.geometry("300x200")
     Label(kullaniciBulunamadiEkran, text="Kullanıcı Bulunamadı").pack()
     Button(kullaniciBulunamadiEkran, text="Tamam", command=SilKullaniciBulunamadi).pack()
 
@@ -126,14 +126,14 @@ def SilKullaniciBulunamadi():
 def Ekran():
     global anaEkran
     anaEkran = Tk()
-    anaEkran.geometry("300x250")
+    anaEkran.geometry("600x480")
     anaEkran.title("Sistem Giriş Ekranı")
 
-    Label(text="Kayıt Ol veya Giriş Yap", bg="cyan", width="300", height="2", font=("Calibri", 13)).pack()
+    Label(text="Kayıt Ol veya Giriş Yap", bg="cyan", width="600", height="4", font=("Calibri", 13)).pack()
     Label(text="").pack()
-    Button(text="Giriş Yap", width="30", height="2", command=Giris).pack()
+    Button(text="Giriş Yap", width="60", height="4", command=Giris).pack()
     Label(text="").pack()
-    Button(text="Kayıt Ol", width="30", height="2", command=Kayit).pack()
+    Button(text="Kayıt Ol", width="60", height="4", command=Kayit).pack()
     
     anaEkran.mainloop()
 

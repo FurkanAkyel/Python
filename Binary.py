@@ -2,9 +2,9 @@
 
 x = int(input("Sayıyı Giriniz = "))
 
-def bin(n):
+def binary(n):
     if(n==0):
         return;
     bin(int(n/2));
     print(n%2,end="")
-bin(x)
+binary(x)
